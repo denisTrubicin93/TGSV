@@ -92,7 +92,7 @@ iframe{
 	border: none;
 	font-size: 18px;
 	color: #f1f4f9;
-	width: 350px;
+	width: 341px;
 	height: 75px;
 	padding: 0 60px 0 30px;
 }
@@ -137,7 +137,7 @@ iframe{
 	width: 25px;
 	height: 25px;
 	background: url(../img/svg/btn_arrow-down.svg) no-repeat;
-	top: 14px;
+	top: 10px;
 	left: -12px;
 	animation: animate-icon .9s linear infinite alternate;
 }
@@ -147,7 +147,7 @@ iframe{
 		top: 10px;
 	}
 	to{
-		top: 20px;
+		top: 18px;
 	}
 }
 
@@ -211,3 +211,75 @@ footer{
 .info span + span{
 	margin-left: 23px;
 }
+
+/*MEDIA START*/
+@media(max-width: 767px){
+	.video-wrap, .service-form{
+		text-align: center;
+	}
+	.video-wrap{
+		height: 900px;
+	}
+	.youtube-video{
+		width: 100%;
+		height: 380px;
+	}
+	.btn-wrap.text-right, .video-wrap form, .copy, .info{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.title{
+		padding: 50px 0;
+	}
+	.service{
+		width: 325px;
+		margin: 0 auto;
+	}
+	.service-form {
+	    margin: 95px 0 180px;
+	}
+	.about-us{
+		background-size: 200%;
+	}
+	.footer-inner{
+		top: -100px;
+	    height: 100px;
+	}
+	.footer-inner .row{
+		padding-top: 30px;
+	}
+}
+@media(max-width: 424px){
+	.youtube-video{
+		height: 185px;
+	}
+	.video-wrap{
+		height: 582px;
+		padding: 50px 0;
+	}
+	.video-wrap h6{
+		margin: 25px 0;
+	}
+	.video-wrap .form-control, .service, .service-form .form-control{
+		width: 100%;
+	}
+	.btn{
+		padding: 25px 20px;
+	}
+	.btn, .video-wrap .form-control{
+		font-size: 16px;
+	}
+	.title h4{
+		font-size: 25px;
+	}
+	.form-icon{
+		right: 15px;
+	}
+	.copy span{
+		font-size: 15px;
+	}
+	.about-us{
+		background-size: 500%;
+	}
+}
+/*MEDIA END*/
