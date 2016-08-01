@@ -1,4 +1,4 @@
-/*GENERAL SETTINGS START*/
+GENERAL SETTINGS START*/
 body{
 	background: #fff;
 	margin: 0 auto;
@@ -85,7 +85,7 @@ iframe{
 	background: #d9433c;
 	border-bottom-color: #ff4c46;
 }
-.video-wrap .form-control, .service-form .form-control{
+.video-wrap .form-control, .service-form .form-control, .modal-form .form-control{
 	background: #5b6777;
 	border-radius: 10px;
 	box-shadow: none;
@@ -211,6 +211,117 @@ footer{
 .info span + span{
 	margin-left: 23px;
 }
+/*MODAL STYLE START*/
+.modal-dialog{
+	width: 100%;
+}
+.modal-content{
+	padding: 100px 0;
+}
+.modal-content .container{
+	position: relative;
+}
+.modal-header, .modal-footer{
+	border: none;
+}
+.modal-header button.close{
+	width: 50px;
+	height: 50px;
+	background: url(../img/svg/btn_close.svg) no-repeat;
+	position: absolute;
+	right: 0px;
+	top: -70px;
+	opacity: 1;
+}
+.modal-header button.close:hover{
+	opacity: .6;
+}
+.modal-header h4{
+	font-weight: bold;
+}
+.modal-header h4, .modal-header h5{
+	font-size: 36px;
+	color: #5b6777;
+	line-height: 46px;
+}
+.modal-header span{
+	font-size: 20px;
+	color: #5b6777;
+}
+.modal-header span > span{
+	font-weight: bold;
+}
+.modal-form .form-control{
+	padding: 0 20px 0 60px;
+	width: 100%;
+}
+.modal-form{
+	margin: 50px 0;
+	position: relative;
+	overflow: hidden;
+}
+.modal-form .form-group label{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 50%;
+    margin-top: -15px;
+    left: 35px;
+}
+.modal-form .form-group label.u-m{
+	background: url(../img/svg/btn_user.svg) no-repeat;
+}
+.modal-form .form-group label.e-m{
+	background: url(../img/svg/btn_email.svg) no-repeat;
+}
+.modal-form .form-group label.p-m{
+	background: url(../img/svg/btn_phone.svg) no-repeat;
+}
+.info-modal span{
+	display: inline-block;
+	font-size: 30px;
+	color: #5b6777;
+}
+.info-modal span>span{
+	color: #4bac7b;
+}
+.points-modal{
+	padding: 50px 0;
+	text-align: center;
+}
+.points-modal ul li{
+	display: inline-block;
+	font-size: 20px;
+	color: #5fc491;
+	position: relative;
+	margin-bottom: 10px;
+}
+.points-modal ul li+li{
+	margin-left: 150px;
+}
+.points-modal ul li:before{
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/svg/btn_check-02.svg);
+	position: absolute;
+	top: 0;
+	left: -40px;
+}
+.modal-footer{
+	text-align: center;
+}
+.modal-footer .btn.btn-default{
+	background: #5fc491;
+	border-color: #4bac7b;
+}
+.modal-footer .btn.btn-default:hover{
+	background: #4bac7b;
+	border-color: #5fc491;
+}
+/*MODAL STYLE END*/
 
 /*MEDIA START*/
 @media(max-width: 767px){
@@ -248,6 +359,19 @@ footer{
 	.footer-inner .row{
 		padding-top: 30px;
 	}
+	.modal-dialog{
+		margin: 0;
+	}
+	.points-modal{
+		text-align: left;
+	}
+	.points-modal ul{
+		width: 300px;
+		margin: 0 auto;
+	}
+	.points-modal ul li+li{
+		margin-left: 0;
+	}
 }
 @media(max-width: 424px){
 	.youtube-video{
@@ -281,5 +405,13 @@ footer{
 	.about-us{
 		background-size: 500%;
 	}
+	.points-modal ul{
+		width: 250px;
+		margin: 0 auto;
+		padding-left: 30px;
+	}
+	.modal-header h4, .modal-header h5, .info-modal span{
+		font-size: 25px;
+	}
 }
-/*MEDIA END*/
+/*MEDIA END
