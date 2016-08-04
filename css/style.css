@@ -50,7 +50,7 @@ input, button, textarea{
 	position: relative;
 }
 .youtube-video{
-	width: 750px;
+	width: 720px;
 	height: 430px;
 	border: 15px solid #fff;
 }
@@ -84,6 +84,10 @@ iframe{
 	color: #fff;
 	background: #d9433c;
 	border-bottom-color: #ff4c46;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+	outline: none;
+	color: #fff;
 }
 .video-wrap .form-control, .service-form .form-control, .modal-form .form-control{
 	background: #5b6777;
@@ -373,7 +377,7 @@ footer{
 		margin-left: 0;
 	}
 }
-@media(max-width: 424px){
+@media(max-width: 479px){
 	.youtube-video{
 		height: 185px;
 	}
